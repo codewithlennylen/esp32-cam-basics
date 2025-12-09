@@ -13,6 +13,7 @@
 
 This example toggles the onboard camera flash LED (GPIO 4) in the traditional Arduino Blink fashion.
 
+![ESP32-CAM Blink Demo](assets/blink_demo.gif)
 
 
 # Troubleshooting
