@@ -3,13 +3,15 @@
 
 int cameraFlash = 4;
 
-void setup() {
+void setup()
+{
   pinMode(cameraFlash, OUTPUT);
 }
 
-void loop() {
+void loop()
+{
   digitalWrite(cameraFlash, HIGH);
   delay(1000);
   digitalWrite(cameraFlash, LOW);
-  delay(1000);
+  delay(2000);
 }
