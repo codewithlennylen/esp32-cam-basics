@@ -1,0 +1,16 @@
+{
+  "folders": [
+	{
+		"path": ".."
+	},
+	{
+		"name": "blink",
+		"path": "../blink"
+	},
+	{
+		"name": "camera-web-server",
+		"path": "."
+	}
+],
+  "settings": {}
+}
