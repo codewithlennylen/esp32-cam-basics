@@ -1,5 +1,8 @@
 # ESP32-CAM Basics
 
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/c768c12d-c200-4a5b-8c77-ca96a1a631c7" />
+
+
 **Environment**
 
 * **IDE:** PlatformIO
@@ -13,16 +16,14 @@
 
 This example toggles the onboard camera flash LED (GPIO 4) in the traditional Arduino Blink fashion.
 
-![ESP32-CAM Blink Demo](assets/blink_demo.gif)
 
-
-# Troubleshooting
+### Troubleshooting
 
 Some errors I encountered and working fixes.
 
-## Error 1:
+#### Error 1:
 
-### `[Errno 13] could not open port /dev/ttyS0: Permission denied`
+#### `[Errno 13] could not open port /dev/ttyS0: Permission denied`
 
 **Cause:** `/dev/ttyS0` is your PC’s built-in serial port. PlatformIO is using it because it couldn't detect your ESP32-CAM.
 
@@ -34,11 +35,11 @@ Some errors I encountered and working fixes.
 
 
 
-## Error 2:
+#### Error 2:
 
-### `Could not open /dev/ttyUSB0, the port is busy or doesn't exist`
+#### `Could not open /dev/ttyUSB0, the port is busy or doesn't exist`
 
-### `Permission denied: '/dev/ttyUSB0'`
+#### `Permission denied: '/dev/ttyUSB0'`
 
 **Cause:** You do not have permission to access USB serial ports.
 
@@ -53,9 +54,9 @@ Some errors I encountered and working fixes.
 
 
 
-## Error 3:
+#### Error 3:
 
-### `Failed to connect to ESP32: No serial data received`
+#### `Failed to connect to ESP32: No serial data received`
 
 **Cause:** ESP32-CAM did not enter flashing mode / needs manual reset timing.
 
