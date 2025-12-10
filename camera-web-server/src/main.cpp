@@ -1,18 +1,42 @@
+/*
+  ESP32 WiFi Signal Test
+  esp32-wifi-signal-test.ino
+  Tests WiFi signal strength
+  *Requires WiFi SSID and Password
+
+  DroneBot Workshop 2020
+  https://dronebotworkshop.com
+*/
+
+// Include WiFi library
+#include "WiFi.h"
 #include <Arduino.h>
+#include "esp_camera.h"
 
-// put function declarations here:
-int myFunction(int, int);
+// SSID and Password - modify for your WiFi network
+const char* ssid     = "JICA-IPIC";
+const char* password = "JICAKENYA54321";
 
-void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+void setup(){
+  // Setup serial monitor
+  Serial.begin(115200);
+  // Start WiFi and conect to network
+  WiFi.begin(ssid, password);
+  // Wait while connection established
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print("-");
+  }
+  // WiFi is connected
+  Serial.println("");
+  Serial.print("Connected to network ");
+  Serial.println(ssid);
+  delay(100);
 }
 
-void loop() {
-  // put your main code here, to run repeatedly:
-}
-
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
+void loop(){
+  Serial.print(ssid);
+  Serial.print(" Signal Level: ");
+  Serial.println(WiFi.RSSI());
+  delay(2000);
 }
