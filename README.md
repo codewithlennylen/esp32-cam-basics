@@ -78,3 +78,14 @@ Some errors I encountered and working fixes.
 *WIP*
 
 
+# 3 - Random Nerd Tutorial Example
+
+Followed the example from Random Nerd Tutorials and it worked seamlessly.
+
+* I switched to Arduino IDE 2.3.7 as I still had unresolved issues while using Platform IO
+
+Only issue is that the frame rate is quite low (< 1fps)
+
+Also the Board gets significantly hot
+
+
