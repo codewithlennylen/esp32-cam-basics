@@ -25,8 +25,8 @@
 #include "esp_http_server.h"
 
 //Replace with your network credentials
-const char* ssid = "JICA-IPIC";
-const char* password = "JICAKENYA54321";
+const char* ssid = "";
+const char* password = "";
 
 #define PART_BOUNDARY "123456789000000000000987654321"
 
